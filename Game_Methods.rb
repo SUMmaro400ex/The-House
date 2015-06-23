@@ -84,7 +84,6 @@ module GameMethods
 		Thread.new {
  		 puts `afplay ./Sounds/themeupdate.mp3 -v 0.25 -t 90`
 		}
-		#puts "Hi " + name
 		puts `afplay ./Sounds/bang.mp3`
 		puts "Welcome to The House, #{name}!
 		\rYou're home enjoying a lazy Sunday on the couch.
