@@ -76,11 +76,17 @@ module GameMethods
     \r 	                  Visit us @ JonComApps.com
 
 		"
+
+		puts "Press the fn key twice, wait for the microphone to pop up.
+		\rSlowly and clearly state your name. Then press the fn key again. 
+		\rWait for the magic to work, then press enter.\n"
+		name = gets.chomp
 		Thread.new {
  		 puts `afplay ./Sounds/themeupdate.mp3 -v 0.25 -t 90`
 		}
+		#puts "Hi " + name
 		puts `afplay ./Sounds/bang.mp3`
-		puts "Welcome to The House!
+		puts "Welcome to The House, #{name}!
 		\rYou're home enjoying a lazy Sunday on the couch.
 		\rWhen suddenly you hear a knock at the front door.
 		\rPress enter to continue"
